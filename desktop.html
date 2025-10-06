@@ -10,13 +10,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<meta name="format-detection" content="telephone=no" />
 
-	<!-- Windows 12 网页版是一个开放源项目,
-	希望让用户在网络上预先体验 Windows 12,
-	内容可能与 Windows 12 正式版本不一致。
-	使用标准网络技术，例如 HTML、CSS 和 JavaScript，
-	此项目绝不附属于微软，且不应与微软操作系统或产品混淆，
-	这也不是 Windows365 cloud PC
-	本项目中微软、Windows 和其他示范产品是微软公司的商标 -->
+	<!-- 欢迎来到BringOS网页版！ -->
 	<link rel="stylesheet" href="./desktop.css">
 	<link rel="stylesheet" href="bootstrap-icons.css">
 	<!-- Apps style -->
@@ -53,8 +47,8 @@
 
 	<base target="_blank">
 
-	<title>Windows 12 网页版</title>
-	<meta name="description" content="Windows 12 网页版是一个在线体验 Windows 12 操作系统的开源项目, 使用 HTML、CSS 和 JavaScript 模拟 Windows 12 操作系统的界面与交互。">
+	<title>Bring OS 网页版</title>
+	<meta name="description" content="Bring OS 网页版是一个在线体验 Bring OS 操作系统的开源项目, 使用 HTML、CSS 和 JavaScript 模拟 Bring OS 操作系统的界面与交互。">
 <!-- 	<meta name="keywords" content="Windows 12, windows 12, Windows12, windows12, Windows 12 网页版, Windows 12网页版, Windows12网页版, windows12网页版, Win12, win12,Win12网页版, win12网页版, 网页版"> -->
 <!-- 	真正的SEO强者，是不会用keywords的 -->
 </head>
@@ -273,9 +267,9 @@ toggletheme() 切换主题
 					<img src="icon/setting.svg">
 					<p data-i18n="setting.name">设置</p>
 				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['explorer', '文件资源管理器'])" onclick="openapp('explorer');hide_startmenu();">
+				<a oncontextmenu="return showcm(event, 'smlapp', ['explorer', '文件管理器'])" onclick="openapp('explorer');hide_startmenu();">
 					<img src="icon/explorer.svg">
-					<p data-i18n="explorer.name">文件资源管理器</p>
+					<p data-i18n="explorer.name">文件管理器</p>
 				</a>
 				<a oncontextmenu="return showcm(event, 'smlapp', ['calc', '计算器'])" onclick="openapp('calc');hide_startmenu();">
 					<img src="icon/calc.svg">
@@ -285,9 +279,9 @@ toggletheme() 切换主题
 					<img src="icon/run.svg">
 					<p data-i18n="run.name">运行</p>
 				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['about', '关于 Win12 网页版'])" onclick="openapp('about');hide_startmenu();">
+				<a oncontextmenu="return showcm(event, 'smlapp', ['about', '关于 Bring OS 网页版'])" onclick="openapp('about');hide_startmenu();">
 					<img src="icon/about.svg">
-					<p data-i18n="about.name">关于 Win12 网页版</p>
+					<p data-i18n="about.name">关于 Bring OS</p>
 				</a>
 				<a oncontextmenu="return showcm(event, 'smlapp', ['taskmgr', '任务管理器'])" onclick="openapp('taskmgr');hide_startmenu();">
 					<img src="icon/taskmgr.png">
@@ -297,21 +291,21 @@ toggletheme() 切换主题
 					<img src="icon/notepad.svg">
 					<p data-i18n="notepad.name">记事本</p>
 				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['copilot', 'Windows 12 Copilot'])" onclick="openapp('copilot');hide_startmenu()">
+				<a oncontextmenu="return showcm(event, 'smlapp', ['copilot', 'Bring OS2 Copilot'])" onclick="openapp('copilot');hide_startmenu()">
 					<img src="icon/copilot.svg">
-					<p>Windows 12 Copilot</p>
+					<p>Bring OS Copilot</p>
 				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['minesweeper', 'Windows 12 minesweeper'])" onclick="openapp('minesweeper');hide_startmenu()">
+				<a oncontextmenu="return showcm(event, 'smlapp', ['minesweeper', 'Bring OS minesweeper'])" onclick="openapp('minesweeper');hide_startmenu()">
 					 <img src="icon/minesweeper.svg">
-				  <p>Windows 12 扫雷</p>
+				  <p>Bring OS 扫雷</p>
 			    </a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['edge', 'Microsoft Edge'])" onclick="openapp('edge');hide_startmenu();">
+				<a oncontextmenu="return showcm(event, 'smlapp', ['edge', 'Chromedge'])" onclick="openapp('edge');hide_startmenu();">
 					<img src="icon/edge.svg">
-					<p data-i18n="edge.name">Microsoft Edge</p>
+					<p data-i18n="edge.name">Chromedge</p>
 				</a>
-				<a oncontextmenu="return showcm(event, 'smlapp', ['msstore', 'Microsoft Store'])" onclick="openapp('msstore');hide_startmenu();">
+				<a oncontextmenu="return showcm(event, 'smlapp', ['msstore', 'Store'])" onclick="openapp('msstore');hide_startmenu();">
 					<img src="icon/msstore.svg">
-					<p>Microsoft Store</p>
+					<p>Store</p>
 				</a>
 				<a oncontextmenu="return showcm(event, 'smlapp', ['camera', '相机'])" onclick="apps.camera.notice();hide_startmenu()">
 					<img src="icon/camera.svg">
@@ -425,13 +419,13 @@ toggletheme() 切换主题
 						<img src="icon/feedback.svg">
 						<p data-i18n="feedback.name">反馈中心</p>
 					</a>
-					<a class="a sm-app enable about" onclick="openapp('about');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['about','关于 Win12 网页版'])">
+					<a class="a sm-app enable about" onclick="openapp('about');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['about','关于 Bring OS 网页版'])">
 						<img src="icon/about.svg">
-						<p data-i18n="about.name">关于 Win12 网页版</p>
+						<p data-i18n="about.name">关于 Bring OS 网页版</p>
 					</a>
-					<a class="a sm-app enable explorer" onclick="openapp('explorer');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['explorer','文件资源管理器'])">
+					<a class="a sm-app enable explorer" onclick="openapp('explorer');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['explorer','文件管理器'])">
 						<img src="icon/explorer.svg">
-						<p data-i18n="explorer.name">文件资源管理器</p>
+						<p data-i18n="explorer.name">文件管理器</p>
 					</a>
 					<a class="a sm-app enable notepad" onclick="openapp('notepad');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['notepad','记事本'])">
 						<img src="icon/notepad.svg">
@@ -441,9 +435,9 @@ toggletheme() 切换主题
 						<img src="icon/setting.svg">
 						<p data-i18n="setting.name">设置 </p>
 					</a>
-					<a class="a sm-app enable defender" onclick="openapp('defender');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['defender','Windows 安全中心'])">
+					<a class="a sm-app enable defender" onclick="openapp('defender');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['defender','Bring OS 安全中心'])">
 						<img src="icon/defender.svg">
-						<p data-i18n="defender.name">Windows 安全中心</p>
+						<p data-i18n="defender.name">Bring OS 安全中心</p>
 					</a>
 					<a class="a sm-app enable msstore" onclick="openapp('msstore');hide_startmenu();" oncontextmenu="return showcm(event, 'smapp', ['msstore', 'Microsoft Store'])">
 						<img src="icon/msstore.svg">
@@ -455,7 +449,7 @@ toggletheme() 切换主题
 					</a>
 					<a class="a sm-app enable windows12" onclick="openapp('windows12');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['windows12','Windows 12'])">
 						<img src="icon/logo.svg">
-						<p>Windows 12</p>
+						<p>Bring OS</p>
 					</a>
 					<a class="a sm-app enable terminal" onclick="openapp('terminal');hide_startmenu();" oncontextmenu="return showcm(event,'smapp',['terminal','终端'])">
 						<img src="icon/terminal.svg">
@@ -508,7 +502,7 @@ toggletheme() 切换主题
 						$('#search-win').removeClass('show-begin');
 					}, 200);">
 						<img src="icon/about.svg">
-						<p data-i18n="about.name">关于 Win12 网页版</p>
+						<p data-i18n="about.name">关于 Bring OS 网页版</p>
 					</a>
 				</list>
 			</div>
